@@ -1,0 +1,8 @@
+version=4
+
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/libdivsufsort-$1\.tar\.gz/ \
+  https://github.com/y-256/libdivsufsort/tags .*/v?(\d\S*)\.tar\.gz
+
+# If upstream becomes active again, we might want to watch releases.
+# https://github.com/#GITHUBUSER#/#PACKAGE#/releases .*/archive/#PREFIX#(\d[\d.-]+)\.(?:tar(?:\.gz|\.bz2)?|tgz)
+#

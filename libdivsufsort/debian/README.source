@@ -1,0 +1,16 @@
+libdivsufsort
+=============
+
+The initial upload of this package uses the tarball
+distributed from the traditional google code repository.
+The maintainer is aware of the transition to github,
+however, that reimpor has issues with the build 
+instructions, while otherwise being functionally identical.
+
+For NMUs or team uploads, or whenever a migration to
+the github tarball seems appropriate, please inspect a
+espective pull request on
+https://github.com/y-256/libdivsufsort/pull/7
+
+-- 
+   Fabian Klötzl <kloetzl@evolbio.mpg.de>

@@ -1,0 +1,39 @@
+Source: libdivsufsort
+Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Uploaders: Fabian Klötzl <kloetzl@evolbio.mpg.de>
+Section: libs
+Priority: optional
+Build-Depends: cmake,
+               debhelper-compat (= 13)
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/med-team/libdivsufsort
+Vcs-Git: https://salsa.debian.org/med-team/libdivsufsort.git
+Homepage: https://github.com/y-256/libdivsufsort
+Rules-Requires-Root: no
+
+Package: libdivsufsort3
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Description: fast suffix array construction
+ The libdivsufsort project provides a fast, lightweight, and robust
+ C API library to construct the suffix array and the Burrows-Wheeler
+ transformed string for any input string of a constant-size alphabet.
+ .
+ This package installs shared library files.
+
+Package: libdivsufsort-dev
+Architecture: any
+Multi-Arch: same
+Section: libdevel
+Depends: libdivsufsort3 (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: libdivsufsort header files
+ The libdivsufsort project provides a fast, lightweight, and robust
+ C API library to construct the suffix array and the Burrows-Wheeler
+ transformed string for any input string of a constant-size alphabet.
+ .
+ This package installs files needed for development.
